@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <center>
+        <h2> RANDOM COLOUR GENERATOR 🎨</h2>
+        <button onclick="changeColor()">Click Me</button>
+        <script>
+            function changeColor() {
+                const randomColor=getRandomColor();
+                document.body.style.backgroundColor=randomColor;
+            }
+            function getRandomColor() {
+                const letters='0123456789ABCDEF';
+                let color='#';
+                for (let i=0; i <6; i++) {
+                    color += letters[Math.floor(Math.random()*16)];
+                }
+                return color;
+            }
+        </script>
+        </center>
+    </body>
+</html>
