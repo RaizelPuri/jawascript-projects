@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        NAVBAR
+    </title>
+    <style>
+        body {
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .topnav {
+            overflow: hidden;
+            background-color: floralwhite;
+        }
+        .topnav a {
+            float: left;
+            color: darksalmon;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .topnav a:hover {
+            background-color: aquamarine;
+            color: black;
+        }
+        .topnav a.active {
+            background-color: orchid;
+            color: black;
+        }
+        .ping1, .ping2, .ping3 {
+            position: relative;
+            opacity: 0.70;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .ping1 {
+            background-image: url('mount.jfif');
+            min-height: 100%;
+        }
+        .ping2 {
+            background-image: url(sky.jfif);
+            min-height: 400px;
+        }
+        .ping3 {
+            background-image: url(park.jfif);
+            min-height: 400px;
+        }
+        .section {
+         text-align: center;
+         padding: 50px 80px;
+        }
+        .section-light {
+            background-color: #f4f4f4;
+            color: #666;
+        }
+        .section-dark {
+            background-color: #282e34;
+            color: #ddd;
+        }
+        .ptext {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+            font-size: 27px;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+        }
+        .ptext .border {
+            background-color: #111;
+            color: #fff;
+            padding: 20px;
+        }
+        .ptext .border.trans {
+            background-color: transparent;
+        }
+        @media(max-width:568px) {
+            .ping1, .ping2, .ping3 {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#home"> HOME</a>
+        <a href="#about"> COURSES</a>
+        <a href="#contact"> QUIZZES</a>
+        <a href="#support"> SUPPORT</a>
+    </div>
+    <br>
+    <span class="border trans" style="font-size: 40px;">
+        <center>
+            WELCOME TO CODINGAL
+        </center>
+    </span>
+    <br>
+    <section>
+        <h2> CODING</h2>
+        <p> Coding is the process of writing step-by-step instructions in a programming language that a computer can understand and
+        execute. Often compared to writing a recipe, it allows humans to communicate with machines to build websites, mobile
+        apps, and software. It requires a logical approach to problem-solving and plays a crucial role in modern technology.</p>
+    </section>
+     <div class="ping3">
+        <div class="ptext">
+            <span class="border trans"> PYTHON</span>
+        </div>
+     </div>
+</body>
+</html>
